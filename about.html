@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us - MQ_MultiSense AI</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="others/MQ_AI.ico" rel="icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function(registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function(error) {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+  
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="others/MQ_AI.ico" alt="MQ_MultiSense AI Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <style>
+      
+
+        .text-container {
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            justify-content: right;
+            align-items: center;
+            
+            font-family: Arial, sans-serif;
+        }
+
+        .sliding-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: slide 28s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <div class="text-container">
+        <div class="sliding-text">Our Contact Information: Address: South C near AirStrip, Garissa, P.O.Box 785-70100  Phone: (+254) 722-808895  Email: info@mq_multisense.ai (This email is under mantainance) (use this for the time being Savestapol@gmail.com)</div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="about">
+        <div class="container">
+            <h1>About MQ_MultiSense AI</h1>
+            <p>MQ_MultiSense AI specializes in building multimodal AI applications. Our mission is to innovate and provide top-notch AI solutions for various industries.</p>
+            
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <h3>Mohamed sheikh Mohamud</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <h3>Mohamed Mohamud</h3>
+                <p>CTO</p>
+            </div>
+            
+            <h2>Careers</h2>
+            <p>We are always looking for talented individuals to join our team. <a href="careers.html">See current openings.</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MQ_MultiSense AI. All rights reserved.</p>
+            <ul>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms of Service.html">Terms of Service</a></li>
+                <li><a href="https://wa.me/0722808895"><img src="others/download.png" alt="Whatssap"></a></li>
+                <li><a href="https://youtube.com/@mq-software?si=q7JQ8AUPpITX-hSx"><img src="others/download (1).png" alt="Youtube"></a></li>
+                <li><a href="https://www.tiktok.com/@mo.qadar1"><img src="others/download (2).png" alt="Ticktok"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

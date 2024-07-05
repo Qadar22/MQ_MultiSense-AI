@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ_MultiSense AI</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="others/MQ_AI.ico" rel="icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then(function(registration) {
+            console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function(error) {
+            console.log('Service Worker registration failed:', error);
+        });
+    }
+</script>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="others/MQ_AI.ico" alt="MQ_MultiSense AI Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sliding Text -->
+    <style>
+        .text-container {
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            justify-content: right;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .sliding-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: slide 28s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <div class="text-container">
+        <div class="sliding-text">Our Contact Information: Address: South C near AirStrip, Garissa, P.O.Box 785-70100  Phone: (+254) 722-808895  Email: info@mq_multisense.ai (This email is under mantainance) (use this for the time being Savestapol@gmail.com)</div>
+    </div>
+
+    <!-- Main Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Innovating with Multimodal AI Solutions</h1>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="about" class="intro">
+        <div class="container">
+            <h2>Welcome to MQ_MultiSense AI</h2>
+            <p>We specialize in building multimodal AI applications.</p>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>AI Model Development</h3>
+                <p>Detailed description of AI Model Development service.</p>
+            </div>
+            <div class="service-item">
+                <h3>Data Integration</h3>
+                <p>Detailed description of Data Integration service.</p>
+            </div>
+            <div class="service-item">
+                <h3>AI Consulting</h3>
+                <p>Detailed description of AI Consulting service.</p>
+            </div>
+            <div class="service-item">
+                <h3>Custom AI Solutions</h3>
+                <p>Detailed description of Custom AI Solutions service.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial-item">
+                <p>"MQ_MultiSense AI provided exceptional AI solutions for our business."</p>
+                <p>- Mohamed Yussuf Ogle</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Their expertise in multimodal AI is unmatched."</p>
+                <p>- Abdinasir Osman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="news-item">
+                <h3>Blog Post 1</h3>
+                <p>The Future of Multimodal AI.</p>
+                <a href="blog.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MQ_MultiSense AI. All rights reserved.</p>
+            <ul>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms of Service.html">Terms of Service</a></li>
+                <li><a href="https://wa.me/0722808895"><img src="others/download.png" alt="WhatsApp"></a></li>
+                <li><a href="https://youtube.com/@mq-software?si=q7JQ8AUPpITX-hSx"><img src="others/download (1).png" alt="YouTube"></a></li>
+                <li><a href="https://www.tiktok.com/@mo.qadar1"><img src="others/download (2).png" alt="TikTok"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

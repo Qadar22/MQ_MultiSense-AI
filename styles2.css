@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff784d;
+    color: #040d12;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ff784d;
+    color: white;
+    padding: 1em 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sliding Text */
+.text-container {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.sliding-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 28s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Banner */
+.banner {
+    background: url('others/banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner .cta-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.banner .cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Introduction */
+.intro {
+    padding: 3em 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* Services */
+.services {
+    background-color: #fff;
+    padding: 3em 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.service-item {
+    margin-bottom: 2em;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.service-item p {
+    font-size: 1em;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 3em 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.testimonial-item {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.testimonial-item p {
+    font-size: 1.2em;
+}
+
+.testimonial-item p:last-child {
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+/* News */
+.news {
+    padding: 3em 0;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.news-item {
+    margin-bottom: 2em;
+}
+
+.news-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.news-item p {
+    font-size: 1em;
+}
+
+.news-item a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact {
+    padding: 3em 0;
+    background-color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    display: block;
+    width: 100%;
+    padding: 0.7em;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #ff784d;
+    color: #282c34;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #282c34;
+    text-decoration: none;
+}
+
+footer ul li a img {
+    height: 20px;
+    vertical-align: middle;
+}

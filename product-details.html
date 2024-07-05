@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ_MultiSense AI APP - Product Details</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="others/MQ_AI.ico" rel="icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function(registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function(error) {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+  
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="others/MQ_AI.ico" alt="MQ_MultiSense AI Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <style>
+      
+
+        .text-container {
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            justify-content: right;
+            align-items: center;
+            
+            font-family: Arial, sans-serif;
+        }
+
+        .sliding-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: slide 28s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <div class="text-container">
+        <div class="sliding-text">Our Contact Information: Address: South C near AirStrip, Garissa, P.O.Box 785-70100  Phone: (+254) 722-808895  Email: info@mq_multisense.ai (This email is under mantainance) (use this for the time being Savestapol@gmail.com)</div>
+    </div>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <h1>MQ_MultiSense AI APP</h1>
+            <style>
+                       
+                .slider {
+                    width: 80%;
+                    max-width: 600px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+        
+                .slide {
+                    min-width: 100%;
+                    box-sizing: border-box;
+                }
+        
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                 .text-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+.sliding-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+            </style>
+            <div class="slider">
+                <div class="slides" margin="10%">
+                    <div class="slide"><img src="others/WhatsApp Image 2024-07-02 at 15.27.37.jpeg" alt="Image 1"></div>
+                    <div class="slide"><img src="others/WhatsApp Image 2024-07-02 at 15.32.38.jpeg" alt="Image 2"></div>
+                    <div class="slide"><img src="others/WhatsApp Image 2024-07-02 at 15.32.39 (1).jpeg" alt="Image 3"></div>
+                    <div class="slide"><img src="others/WhatsApp Image 2024-07-02 at 15.32.39 (2).jpeg" alt="Image 4"></div>
+                    <div class="slide"><img src="others/WhatsApp Image 2024-07-02 at 15.32.39.jpeg" alt="Image 5"></div>
+                    <div class="slide"><img src="others/WhatsApp Image 2024-07-02 at 15.46.19.jpeg" alt="Image 6"></div>
+                    <div class="slide"><img src="others/WhatsApp Image 2024-07-03 at 01.28.22.jpeg" alt="Image 7"></div>
+                </div>
+            </div>
+            <script>
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.slide');
+        
+                function showSlide(index) {
+                    const slidesContainer = document.querySelector('.slides');
+                    if (index >= slides.length) {
+                        currentSlide = 0;
+                    } else if (index < 0) {
+                        currentSlide = slides.length - 1;
+                    } else {
+                        currentSlide = index;
+                    }
+                    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+                }
+        
+                function nextSlide() {
+                    showSlide(currentSlide + 1);
+                }
+        
+                setInterval(nextSlide, 3000); // Change image every 3 seconds
+            </script>
+            <p>The MQ_MultiSense AI APP is an innovative multimodal artificial intelligence application designed to seamlessly integrate various AI capabilities into a single, user-friendly platform. This cutting-edge app leverages the power of machine learning, natural language processing, computer vision, and more to provide users with comprehensive and intelligent solutions across multiple domains. Whether you're a business professional, developer, or AI enthusiast, the MQ_MultiSense AI APP offers tools and functionalities to enhance productivity, decision-making, and overall user experience.</p>
+
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Multimodal Integration:</strong> Combines text, image, video, and audio processing capabilities, enabling users to interact with the app through various input modes for a more natural and flexible experience.</li>
+                <li><strong>Natural Language Processing (NLP):</strong> Advanced text analysis and language understanding, supporting multiple languages for global accessibility. Includes features like sentiment analysis, text summarization, and translation.</li>
+                <li><strong>Computer Vision:</strong> Image and video recognition with high accuracy, including object detection, face recognition, and scene analysis. Augmented reality features for enhanced visual experiences.</li>
+                <li><strong>Speech Recognition and Synthesis:</strong> High-quality speech-to-text conversion for dictation and transcription. Natural-sounding text-to-speech for various applications, supporting multiple languages and dialects.</li>
+                <li><strong>Data Analytics and Insights:</strong> Powerful data processing and analysis tools that generate actionable insights from large datasets. Visualizes data with interactive charts and graphs.</li>
+                <li><strong>Customizable AI Models:</strong> Allows users to train and deploy custom machine learning models, supporting various frameworks like TensorFlow, PyTorch, and scikit-learn. Easy integration with existing workflows and systems.</li>
+                <li><strong>User-Friendly Interface:</strong> Intuitive and responsive design for a seamless user experience, with customizable dashboards and widgets for personalized setups. Detailed tutorials and support documentation.</li>
+                <li><strong>Cloud and Edge Computing:</strong> Offers cloud-based processing for scalability and accessibility, with support for edge computing for low-latency and offline capabilities. Ensures data security and privacy through advanced encryption.</li>
+            </ul>
+
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Enhanced Productivity:</strong> Automates repetitive tasks, allowing users to focus on more strategic activities. Streamlines workflows with integrated AI tools, reducing time and effort.</li>
+                <li><strong>Improved Decision-Making:</strong> Provides deep insights and data-driven recommendations, helping businesses make informed decisions with predictive analytics.</li>
+                <li><strong>Scalability and Flexibility:</strong> Scalable infrastructure to handle varying workloads and user demands, with flexible integration options to fit diverse business needs and environments.</li>
+                <li><strong>Cost Efficiency:</strong> Reduces operational costs by automating processes and optimizing resource utilization. Offers a cost-effective solution with a comprehensive suite of AI tools.</li>
+                <li><strong>Global Reach:</strong> Supports multiple languages and regions, making it accessible to a global audience. Facilitates international collaboration and communication.</li>
+                <li><strong>Innovation and Competitiveness:</strong> Keeps businesses at the forefront of technology with state-of-the-art AI capabilities, driving innovation by enabling the development of new AI-powered solutions.</li>
+                <li><strong>User Empowerment:</strong> Empowers users with powerful tools to create, analyze, and innovate. Provides educational resources to help users understand and leverage AI technologies.</li>
+                <li><strong>Security and Compliance:</strong> Ensures data privacy and security with robust encryption and compliance with industry standards, providing peace of mind for businesses and individuals concerned about data protection.</li>
+            </ul>
+
+            <a href="release.html" class="contact-button">Releases</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MQ_MultiSense AI. All rights reserved.</p>
+            <ul>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms of Service.html">Terms of Service</a></li>
+                <li><a href="https://wa.me/0722808895"><img src="others/download.png" alt="Whatssap"></a></li>
+                <li><a href="https://youtube.com/@mq-software?si=q7JQ8AUPpITX-hSx"><img src="others/download (1).png" alt="Youtube"></a></li>
+                <li><a href="https://www.tiktok.com/@mo.qadar1"><img src="others/download (2).png" alt="Ticktok"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

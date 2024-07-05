@@ -1,0 +1,6 @@
+ MQ_MultiSense AI
+
+/Building a website for the company
+/changing background of the app with
+ either color or image
+/Animination of the text view 
